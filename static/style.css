@@ -1,0 +1,87 @@
+:root {
+  --bright-pink-crayola: #ef798aff;
+  --melon: #f7a9a8ff;
+  --glaucous: #7d82b8ff;
+  --finn: #613f75ff;
+  --fairy-tale: #e5c3d1ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fairy-tale);
+  color: #000;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  padding: 1rem;
+  background-color: var(--bright-pink-crayola);
+}
+
+header {
+  border-bottom: 0.5rem solid var(--glaucous);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  border-top: 0.5rem solid var(--glaucous);
+  text-align: right;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-image: url("https://www.worldatlas.com/upload/e5/bf/05/shutterstock-75885847.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main h2 {
+  background-color: var(--melon);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+dialog[open] {
+  padding: 1rem;
+  height: 40vh;
+  width: 90vw;
+  background-color: var(--finn);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0.5rem solid var(--glaucous);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--melon);
+  border: 0.25rem solid var(--finn);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+dialog button {
+  border: 0.25rem solid var(--glaucous);
+}
